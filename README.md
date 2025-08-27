@@ -6,5 +6,5 @@ data fundamentals project week 1
 # added dependencies
 # ran Python script
 # read Jupyter notebooks page. As this is not a Jupyter, I should not need this!
-
+# Karli Dean
 
