@@ -1,5 +1,5 @@
 """
-File: utils_case.py
+File: utils_dean.py
 
 Purpose: Reusable header/tagline module for analytics projects.
 
@@ -10,11 +10,8 @@ A short, first-week module to demonstrate key skills:
 - expose a function named get_tagline() that can be imported into other modules
 - run this file as a script via main() using the if __name__ == '__main__' pattern
 
-Author: Denise Case
+Author: Karli Dean
 
-TODO: Replace 'lastname' in the filename with your own last (or unique) name.
-TODO: Update the file name and author in this opening docstring.
-TODO: Remove each TODO line AFTER you successfully complete the item.
 """
 
 #####################################
@@ -58,38 +55,36 @@ logger.info("Logger loaded.")
 # ----------------------------------
 is_accepting_clients: bool = True
 offers_remote_workshops: bool = True
+is_hiring: bool = False
 
-# TODO: Declare and initialize a new boolean variable (e.g. `is_hiring` and set it to False)
 
 # ----------------------------------
 # Define Integer variables
 # ----------------------------------
 current_year: int = 2025
 year_started: int = 2020
+number_of_employees: int = 25
 
-# TODO: Declare and initialize a new integer variable (e.g. `number_of_employees` and set it to 25)
 
 # ----------------------------------
 # Define String variables
 # ----------------------------------
-author: str = "Denise Case"  # TODO: change to your name
-organization: str = "Stellar Analytics"  # TODO: change the org name
-motto: str = "Clear. Useful. On time."  # TODO: change the motto
+author: str = "Karli Dean" 
+organization: str = "Wizard Analytics"
+motto: str = "Every little thing we do is magic."
+location: str = "St. Louis, Missouri"
 
-# TODO: Declare and initialize a new string variable (e.g. `location` and set it to your city and state)
 
 # ----------------------------------
 # Define List variables
 # ----------------------------------
 # example list of strings
 services: list[str] = ["Data Analysis", "Machine Learning", "Business Intelligence"]
+office_locations: list[str] = ["Seattle, Washington", "Denver, Colorado", "St. Louis, Missouri", "Jacksonville, Florida", "Brooklyn, New York"]
 
 # example list of floating point numbers
 satisfaction_scores: list[float] = [4.8, 4.6, 4.9, 5.0, 4.7]
 
-
-# TODO: Declare and initialize a new list variable (e.g. `office_locations` and set it to 3-5 cities where your org has offices)
-# TODO: Wrap each string in quotes and separate each item with a comma.
 
 # ----------------------------------
 # Use built-in Python operators (such as - + * /)
@@ -100,8 +95,7 @@ min_score: float = min(satisfaction_scores)
 max_score: float = max(satisfaction_scores)
 count_of_services: int = len(services)
 count_of_scores: int = len(satisfaction_scores)
-
-# TODO: Declare and initialize a new calculated variable (e.g. `count_of_locations` that uses the len() function on your list of office locations)
+count_of_locations: int = len(office_locations)
 
 
 # ----------------------------------
@@ -120,8 +114,14 @@ byline: str = f"""
 Author:                     {author}
 Motto:                      {motto}
 Years Active:               {years_active}
+Our Headquarters:           {location}
+Number of Our Locations:    {count_of_locations}
+All of Our Locations:       {office_locations}
 Accepting New Clients?:     {is_accepting_clients}
 Remote Workshops?:          {offers_remote_workshops}
+Are We Hiring?:             {is_hiring}
+Number of Team Members:     {number_of_employees}
+Number of our Services:     {count_of_services}
 Services:                   {services}
 Client Satisfaction Scores: {satisfaction_scores}
 Minimum Satisfaction Score: {min_score}
@@ -131,7 +131,6 @@ Mean Satisfaction Score:    {mean_score:.2f}
 **********************************************************
 """
 
-# TODO: Modify the byline f-string to display your new variables as well. Use curly braces {} to embed each variable.
 
 #####################################
 # Define Global Functions
@@ -170,8 +169,7 @@ def main() -> None:
     loguru.logger.info("Byline:\n" + get_byline())
 
     try:
-        # TODO: Uncomment next line if you want audio feedback (use CTRL+C to stop)
-        # read_byline_aloud()
+        read_byline_aloud()
         pass
     except KeyboardInterrupt:
         logger.info("Speech interrupted by user (Ctrl+C).")

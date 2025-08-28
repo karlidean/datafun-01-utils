@@ -13,4 +13,11 @@ data fundamentals project week 1
 ## Created personal utilities Python file (utils_dean.py)
 ## Uploaded contents from utils_case.py to utils_dean.py
 ## Tested the Python file, it ran smoothly (hooray!)
-
+# TODO's:
+## Updated the file name to my file and the Author name to my name
+## Added a new boolean variable (is hiring) (understanding bool)
+## Defined an integer variable (number of employees) (understanding int)
+## Updated the author, organization name, and motto (you have to love Sting) (understanding str)
+## Defined and understood list of string variables
+## Defined a new variable using the len() function
+## Edited the byline to be more personal and have the variables I created involved!
