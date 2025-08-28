@@ -21,3 +21,4 @@ data fundamentals project week 1
 ## Defined and understood list of string variables
 ## Defined a new variable using the len() function
 ## Edited the byline to be more personal and have the variables I created involved!
+## Found the audio variable and left it "turned on" in the Python file, fyi.
